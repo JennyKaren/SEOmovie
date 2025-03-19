@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteRule ^$ /FILM/ [L]
+
+# URL optimisée pour la liste des films
+RewriteRule ^films$ index.php [L]
+
+# URL optimisée pour la suggestion de films
+RewriteRule ^suggerez-un-film$ create.php [L]
+
+# URL optimisée pour les détails des films avec un ID dynamique
+RewriteRule ^film-details/([0-9]+)$ detail.php?id=$1 [L]
+
+# URL optimisée pour la page À Propos
+RewriteRule ^a-propos$ about.php [L]
+
+# URL optimisée pour la page Contact
+RewriteRule ^contact$ contact.php [L]
